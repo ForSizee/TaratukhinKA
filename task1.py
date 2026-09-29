@@ -5,8 +5,9 @@ print("Курс Основы программирования начался")
 print((16823 * 12302) % 3092)
 
 #3
-age = 17
-name = "Кирилл"
+age = input("Введите значение переменой age: ")
+name = input("Введите значение переменой name: ")
+age = int(age)
 
 if age >= 16:
     print("Поздравляем вы поступили в ВГУИТ")
@@ -27,7 +28,8 @@ if age < 16:
     print("Осталось учиться в школе:", 16 - age, "лет")
 
 #4
-seconds = 100000
+seconds = input("Введите значение переменой seconds: ")
+seconds = int(seconds)
 
 days = seconds // 86400
 hours = (seconds % 86400) // 3600
@@ -37,17 +39,19 @@ seconds_left = seconds % 60
 print(days, "дн.", hours, "ч.", minutes, "мин.", seconds_left, "сек.")
 
 #5
-n = "2"
+n = input("Введите значение для переменной n: ")
 n = int(n)
 
-result = n + n2 + n3 + n4 + n5
+result = n + n**2 + n**3 + n**4 + n**5
 
 print(result)
 
 
 #6
-x = 10
-y = 20
+x = input("Введите значение переменой x: ")
+y = input("Введите значение переменой y: ")
+x = int(x)
+y = int(y)
 
 x, y = y, x
 
